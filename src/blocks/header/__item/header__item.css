@@ -3,18 +3,30 @@
 
 .header__item {
   color: #fff;
-  margin-left: 34px;
+  margin-left: 22px;
   font-weight: 500;
   line-height: 24px;
-  padding: 26px 0px;
+  padding: 12px;
   text-decoration: none;
-  transition-duration: .2s;
+  position: relative;
 }
 
-.header__item:active {
+/* .header__item:active {
   border-bottom: 3px solid #fff;
+} */
+
+.header__item:after {
+  transition-duration: 2s;
 }
 
-.header__item:hover {
-  border-bottom: 3px solid #fff;
+.header__item:hover::after {
+  content: "";
+  width: calc(100% - 24px);
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%);
+
 }

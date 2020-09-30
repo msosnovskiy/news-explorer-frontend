@@ -1,10 +1,12 @@
-@import url('./_login/header__button_login.css');
-@import url('./_logout/header__button_logout.css');
+@import url(./_login/header__button_login.css);
+@import url(./_logout/header__button_logout.css);
 
 .header__button {
   background-color: transparent;
-  padding: 14px 18px;
-  margin-left: 32px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 18px;
+  margin-left: 20px;
   border-radius: 100px;
   color: #fff;
   font-weight: 500;

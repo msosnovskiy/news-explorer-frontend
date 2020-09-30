@@ -1,3 +1,5 @@
 .header__navigation {
-  
+  display: flex;
+  font-display: row;
+  align-items: center;
 }
