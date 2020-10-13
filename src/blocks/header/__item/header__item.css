@@ -2,5 +2,19 @@
 @import url('./_articles/header__item_artices.css');
 
 .header__item {
+  color: #fff;
+  margin-left: 34px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 26px 0px;
+  text-decoration: none;
+  transition-duration: .2s;
+}
 
+.header__item:active {
+  border-bottom: 3px solid #fff;
+}
+
+.header__item:hover {
+  border-bottom: 3px solid #fff;
 }

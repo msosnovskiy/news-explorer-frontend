@@ -1,4 +1,5 @@
-@import url('./_saved_articles/_saved_articles.css');
+@import url(./_saved_articles/_saved_articles.css);
 
 .logo {
+  height: 24px;
 }

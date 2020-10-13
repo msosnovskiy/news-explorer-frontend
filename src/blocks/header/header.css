@@ -1,8 +1,17 @@
-@import url('./__navigation/header__navigation.css');
-@import url('./__item/header__item.css');
-@import url('./__button/header__button.css');
+@import url(./__content/header__content.css);
+@import url(./__navigation/header__navigation.css);
+@import url(./__item/header__item.css);
+@import url(./__button/header__button.css);
 
 .header {
-  background-color: red;
-  border-bottom: 5px solid blue;
+  min-height: 80px;
+  padding: 12px 104px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  z-index: 2;
 }
