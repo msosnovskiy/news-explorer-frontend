@@ -1,6 +1,15 @@
 @import url('./_main/header__item_main.css');
 @import url('./_articles/header__item_artices.css');
 
+@keyframes border {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .header__item {
   color: #fff;
   margin-left: 22px;
@@ -11,12 +20,8 @@
   position: relative;
 }
 
-/* .header__item:active {
-  border-bottom: 3px solid #fff;
-} */
+.header__item::after {
 
-.header__item:after {
-  transition-duration: 2s;
 }
 
 .header__item:hover::after {
@@ -28,5 +33,18 @@
   bottom: -17px;
   left: 50%;
   transform: translate(-50%);
-
+  animation: border .25s ease-in-out;
 }
+
+.header__item:focus::after {
+  content: "";
+  width: calc(100% - 24px);
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: border .25s ease-in-out;
+}
+
