@@ -20,17 +20,13 @@
   position: relative;
 }
 
-.header__item::after {
-
-}
-
 .header__item:hover::after {
   content: "";
   width: calc(100% - 24px);
   height: 3px;
   background-color: #fff;
   position: absolute;
-  bottom: -17px;
+  bottom: -12px;
   left: 50%;
   transform: translate(-50%);
   animation: border .25s ease-in-out;
@@ -42,7 +38,7 @@
   height: 3px;
   background-color: #fff;
   position: absolute;
-  bottom: -17px;
+  bottom: -12px;
   left: 50%;
   transform: translate(-50%);
   animation: border .25s ease-in-out;
