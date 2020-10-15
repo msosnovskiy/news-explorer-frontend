@@ -2,6 +2,7 @@
 @import url(./__link/articles__link.css);
 @import url(./__item/articles__item.css);
 @import url(./__button/articles__button.css);
+@import url(./__message/articles__message.css);
 @import url(./__image/articles__image.css);
 @import url(./__date/articles__date.css);
 @import url(./__title/articles__title.css);

@@ -1,5 +1,4 @@
 @import url(./_attach/articles__button_attach.css);
-@import url(./_not-registered/articles__button_not-registered.css);
 
 .articles__button {
   width: 40px;
@@ -14,4 +13,5 @@
   background-color: #fff;
   border-radius: 8px;
   cursor: pointer;
+  z-index: 1;
 }
