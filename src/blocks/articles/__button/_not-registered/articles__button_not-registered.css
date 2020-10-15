@@ -1,0 +1,21 @@
+.articles__button_not-registered {
+}
+
+.articles__button_not-registered::before {
+  content: "Войдите, чтобы сохранять статьи";
+  min-width: 182px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 45px;
+  font-weight: 500;
+  line-height: 12px;
+  font-size: 10px;
+  color: #000;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+}
