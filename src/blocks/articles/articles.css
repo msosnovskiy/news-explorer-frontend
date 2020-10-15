@@ -1,13 +1,25 @@
 @import url(./__container/articles__container.css);
 @import url(./__link/articles__link.css);
+@import url(./__item/articles__item.css);
 @import url(./__image/articles__image.css);
 @import url(./__date/articles__date.css);
 @import url(./__title/articles__title.css);
 @import url(./__text/articles__text.css);
 @import url(./__source/articles__source.css);
 
-/* поправить падингг в 40 после добавления статей. Т.к. от тайтла должно быть вниз 64рх */
 .articles {
   padding: 28px 0 40px;
+  background-color: #F5F6F7;
+  position: relative;
+}
 
+.articles::before {
+  content: "";
+  width: calc(100% + 208px);
+  height: 100%;
+  background-color: #F5F6F7;
+  position: absolute;
+  top: 0;
+  left: -104px;
+  z-index: -1;
 }

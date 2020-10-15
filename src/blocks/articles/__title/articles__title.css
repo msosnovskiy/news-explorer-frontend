@@ -1,3 +1,7 @@
 .articles__title {
-  
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 26px;
+  margin: 12px auto 16px;
 }
