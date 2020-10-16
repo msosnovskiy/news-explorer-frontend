@@ -1,0 +1,7 @@
+@import url(./_m/button__size_m.css);
+@import url(./_s/button__size_s.css);
+
+.button__size {
+  min-height: 64px;
+  padding: 16px;
+}

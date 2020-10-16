@@ -1,3 +1,6 @@
+@import url(./__color/button__color.css);
+@import url(./__size/button__size.css);
+
 .button {
   border: none;
   cursor: pointer;
@@ -5,12 +8,9 @@
   font-size: 18px;
   line-height: 24px;
   transition-duration: 0.2s;
-}
-
-.button:hover {
-
-}
-
-.button:active {
-
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

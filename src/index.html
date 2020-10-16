@@ -18,8 +18,8 @@
         <nav class="header__navigation">
           <a href="#" class="header__item header__item_main">Главная</a>
           <a href="#" class="header__item header__item_articles">Сохранённые статьи</a>
-          <button class="header__button header__button_login">Авторизоваться</button>
-          <button class="header__button header__button_logout" hidden>Грета</button>
+          <button class="header__button header__button_login" hidden>Авторизоваться</button>
+          <button class="header__button header__button_logout">Грета</button>
         </nav>
       </div>
     </header>
@@ -32,7 +32,7 @@
         <form action="" class="search__form" name="search">
           <input type="text" name="keyword" class="search__input" required minlength="2" maxlength="90"
             placeholder="Введите тему новости">
-          <button type="submit" class="button search__button">Искать</button>
+          <button type="submit" class="button button__color button__color_blue search__button">Искать</button>
         </form>
       </div>
     </section>
@@ -62,7 +62,7 @@
               <button class="articles__button">
                 <svg class="articles__icon articles__icon_attach articles__icon_attach_true"><use xlink:href="#attach"></use></svg>
               </button>
-              <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
+              <p class="articles__message">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img2.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
               <h3 class="articles__title">Лесные огоньки: история одной фотографии</h3>
@@ -87,8 +87,7 @@
             </article>
           </a>
         </div>
-
-        <button class="button">Показать еще</button>
+        <button class="button button__size button__size_s button__color button__color_white articles__button-more">Показать еще</button>
       </div>
     </section>
 

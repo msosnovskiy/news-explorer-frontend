@@ -9,6 +9,7 @@
 @import url(./__title/articles__title.css);
 @import url(./__text/articles__text.css);
 @import url(./__source/articles__source.css);
+@import url(./__button-more/articles__button-more.css);
 
 .articles {
   padding: 28px 0 40px;
