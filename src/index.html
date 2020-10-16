@@ -17,7 +17,7 @@
         <img src="./images/logo.svg" alt="логотип" class="logo">
         <nav class="header__navigation">
           <a href="#" class="header__item header__item_main">Главная</a>
-          <a href="#" class="header__item header__item_articles" >Сохранённые статьи</a>
+          <a href="#" class="header__item header__item_articles">Сохранённые статьи</a>
           <button class="header__button header__button_login">Авторизоваться</button>
           <button class="header__button header__button_logout" hidden>Грета</button>
         </nav>
@@ -43,7 +43,9 @@
         <div class="articles__container">
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button articles__button_attach"></button>
+              <button class="articles__button">
+                <svg class="articles__icon articles__icon_attach"><use xlink:href="#attach"></use></svg>
+              </button>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img1.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -57,7 +59,9 @@
           </a>
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button articles__button_attach"></button>
+              <button class="articles__button">
+                <svg class="articles__icon articles__icon_attach articles__icon_attach_true"><use xlink:href="#attach"></use></svg>
+              </button>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img2.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -70,7 +74,9 @@
           </a>
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button articles__button_attach"></button>
+              <button class="articles__button">
+                <svg class="articles__icon articles__icon_attach"><use xlink:href="#attach"></use></svg>
+              </button>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img3.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -80,8 +86,9 @@
               <p class="articles__source">Риа</p>
             </article>
           </a>
-
         </div>
+
+        <button class="button">Показать еще</button>
       </div>
     </section>
 
@@ -111,6 +118,15 @@
         </div>
       </nav>
     </footer>
+
+    <div class="icons">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="attach" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.382 12.714L1 16.942V1h12v15.942l-5.382-4.228L7 12.228l-.618.486z" />
+        </symbol>
+
+      </svg>
+    </div>
 
   </div>
 </body>

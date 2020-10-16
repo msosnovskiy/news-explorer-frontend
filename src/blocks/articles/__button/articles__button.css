@@ -1,11 +1,9 @@
-@import url(./_attach/articles__button_attach.css);
-
 .articles__button {
   width: 40px;
   height: 40px;
   padding: 0;
   position: absolute;
-  transition-duration: 0.25s;
+
   top: 0;
   right: 0;
   margin: 24px;

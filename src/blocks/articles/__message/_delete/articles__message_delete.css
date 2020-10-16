@@ -1,3 +1,9 @@
 .articles__message_delete {
   min-width: 159px;
+  line-height: 14px;
+  font-size: 12px;
+}
+
+.articles__button:hover + .articles__message_delete {
+  display: flex;
 }

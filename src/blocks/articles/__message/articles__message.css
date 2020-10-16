@@ -2,7 +2,7 @@
 @import url('./_delete/articles__message_delete.css');
 
 @keyframes message {
-  from { 
+  from {
     right: 0;
   }
   to {
@@ -12,22 +12,19 @@
 
 .articles__message {
   min-width: 182px;
-  height: 40px;
+  min-height: 40px;
   color: #000;
   font-weight: 500;
   background-color: #FFFFFF;
   border-radius: 10px;
+  padding: 8px 16px;
   box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
   position: absolute;
-  display: none;
   justify-content: center;
   align-items: center;
   top: 0;
   right: 45px;
   margin: 24px;
-}
-
-.articles__button:hover + .articles__message {
-  display: flex;
+  display: none;
   animation: message ease-in .05s;
 }

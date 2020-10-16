@@ -3,3 +3,7 @@
   line-height: 12px;
   font-size: 10px;
 }
+
+.articles__button:hover + .articles__message_attach {
+  display: flex;
+}

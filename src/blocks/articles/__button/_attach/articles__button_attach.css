@@ -1,7 +1,0 @@
-.articles__button_attach {
-  background: url(../../../../images/attach.svg) center no-repeat;
-}
-
-.articles__button_attach:hover {
-  background-image: url(../../../../images/attach_active.svg);
-}
