@@ -12,17 +12,3 @@
   display: flex;
   align-items: center;
 }
-
-.search::before {
-  content: "";
-  position: absolute;
-  background-image: url(../../images/backgroud.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  top: 0;
-  left: -104px;
-  width: calc(100% + 208px);
-  height: 100%;
-  z-index: -1;
-}
