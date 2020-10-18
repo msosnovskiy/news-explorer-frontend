@@ -1,0 +1,8 @@
+.preloader__search {
+  width: 100%;
+  display: none;
+  transition-duration: .2s;
+}
+.preloader__search_visible {
+  display: block;
+}

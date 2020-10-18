@@ -2,3 +2,7 @@
   background-color: #fff;
   color: #1A1B22;
 }
+
+.button__color_white:hover {
+  background-color: #e8e8e8;
+}

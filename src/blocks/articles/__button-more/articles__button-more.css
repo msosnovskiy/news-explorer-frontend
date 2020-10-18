@@ -1,9 +1,4 @@
 .articles__button-more {
   margin-top: 24px;
   margin-bottom: 40px;
-  position: relative;
-}
-
-.articles__button-more:hover {
-  box-shadow: 0 0 10px rgba(8, 29, 45, 0.1);
 }

@@ -1,4 +1,6 @@
 .preloader__message {
+  max-width: 356px;
   color: #B6BCBF;
-  margin: 0 auto 80px;
+  text-align: center;
+  margin: 16px auto 0;
 }

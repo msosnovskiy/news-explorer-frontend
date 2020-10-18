@@ -1,11 +1,17 @@
+@import url(./__search/preloader__search.css);
 @import url(./__message/preloader__message.css);
+@import url(./__not-found/preloader__not-found.css);
+@import url(./__img/preloader__img.css);
+@import url(./__description/preloader__description.css);
 
 .preloader {
   min-height: 282px;
   height: 100%;
-  display: flex;
-  align-items: flex-end;
+  display: none;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  padding: 80px 0;
 }
 
 
@@ -18,4 +24,8 @@
   top: 0;
   left: -104px;
   z-index: -1;
+}
+
+.preloader__visible {
+  display: flex;
 }
