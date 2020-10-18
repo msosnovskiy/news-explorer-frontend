@@ -5,3 +5,10 @@
 .about__paragraph:nth-last-of-type(1) {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 880px) {
+  .about__paragraph {
+    font-size: 18px;
+    line-height: 24px;
+  }
+} 

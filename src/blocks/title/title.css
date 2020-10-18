@@ -5,3 +5,18 @@
   line-height: 46px;
   margin: 52px auto 24px;
 }
+
+@media screen and (max-width: 1100px) {
+  .title {
+    margin-top: 28px;
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+  .title {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 0 auto 16px;
+  }
+}

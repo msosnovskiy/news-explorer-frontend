@@ -5,3 +5,16 @@
   margin: -24px 0 0 -24px;
   border-radius: 16px 16px 0 0;
 }
+
+@media screen and (max-width: 1100px) {
+  .articles__image {
+    height: 210px;
+}
+
+@media screen and (max-width: 880px) {
+  .articles__image {
+    width: calc(100% + 32px);
+    height: 150px;
+    margin: -16px 0 0 -16px;
+  }
+}

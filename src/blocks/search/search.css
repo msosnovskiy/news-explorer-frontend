@@ -12,3 +12,9 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 880px) {
+  .search {
+    min-height: 400px;
+  }
+}

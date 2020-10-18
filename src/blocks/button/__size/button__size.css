@@ -5,3 +5,9 @@
   min-height: 64px;
   padding: 16px;
 }
+
+@media screen and (max-width: 880px) {
+  .button__size {
+    min-height: 56px;
+  }
+}

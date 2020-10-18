@@ -1,5 +1,13 @@
 .search__subtitle {
   color: #fff;
-  max-width: 608px;
-  margin: 0 auto 63px;
+  max-width: 585px;
+  margin: 0 0 63px;
+  text-align: left;
+}
+
+@media screen and (max-width: 880px) {
+  .search__subtitle {
+    max-width: 452px;
+    margin: 0 0 47px;
+  }
 }

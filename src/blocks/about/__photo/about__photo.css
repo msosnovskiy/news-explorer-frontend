@@ -1,7 +1,21 @@
 .about__photo {
-  max-width: 464px;
-  max-height: 464px;
+  width: 100%;
+  min-width: 464px;
   object-fit: contain;
-  border-radius: 1000px;
-  margin: 0 56px 0 0;
+  object-position: center center;
+  border-radius: 50%;
 }
+
+@media screen and (max-width: 1100px) {
+  .about__photo {
+    min-width: 200px;
+  }
+} 
+
+
+
+@media screen and (max-width: 880px) {
+  .about__photo {
+    margin-top: 21px;
+  }
+} 

@@ -7,6 +7,9 @@
   min-width: 48px;
   margin-left: 20px;
   border-radius: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
   color: #fff;
   font-weight: 500;
   border: 1px solid #fff;
@@ -14,3 +17,14 @@
   transition-duration: .2s;
 }
 
+@media screen and (max-width: 880px) {
+  .header__button {
+    font-size: 16px;
+    min-height: 40px;
+    min-width: 40px;
+    margin-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+  }
+}

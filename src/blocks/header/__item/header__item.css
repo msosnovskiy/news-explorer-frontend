@@ -44,3 +44,17 @@
   animation: border .25s ease-in-out;
 }
 
+@media screen and (max-width: 880px) {
+  .header__item {
+    padding: 2px;
+    font-size: 16px;
+  }
+  .header__item:hover::after {
+    width: calc(100% - 4px);
+    bottom: -18px;
+  }
+  .header__item:focus::after {
+    width: calc(100% - 4px);
+    bottom: -18px;
+  }
+}

@@ -6,3 +6,10 @@
   top: 0;
   right: 0;
 }
+
+@media screen and (max-width: 880px) {
+  .search__button {
+    padding: 17px 48px;
+  }
+}
+

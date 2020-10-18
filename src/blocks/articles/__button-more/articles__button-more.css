@@ -2,3 +2,10 @@
   margin-top: 24px;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 880px) {
+  .articles__button-more {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+}
