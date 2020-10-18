@@ -8,6 +8,7 @@
 }
 
 .articles__link {
+  min-width: 100%;
   text-decoration: none;
   color: #1A1B22;
   display: flex;
@@ -30,4 +31,10 @@
   animation: shadow .2s ease-in;
   background: rgba(8, 29, 45, 0.1);
   filter: blur(58px);
+}
+
+@media screen and (max-width: 880px) {
+  .articles__link:hover {
+    transform: none;
+  }
 }

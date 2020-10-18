@@ -18,3 +18,11 @@
     width: calc(100% + 80px);
   }
 }
+
+@media screen and (max-width: 740px) {
+  .background_grey::before {
+    left: -16px;
+    width: calc(100% + 32px);
+  }
+}
+

@@ -19,3 +19,8 @@
     margin-top: 21px;
   }
 } 
+
+@media screen and (max-width: 600px) {
+  .about__photo {
+  }
+}
