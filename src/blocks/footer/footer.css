@@ -8,7 +8,9 @@
 
 .footer {
   min-height: 82px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-column-gap: 20px;
   align-items: center;
   justify-content: space-between;
 }

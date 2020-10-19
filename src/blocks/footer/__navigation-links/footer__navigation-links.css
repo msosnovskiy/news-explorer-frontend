@@ -1,10 +1,9 @@
 .footer__navigation-links {
   display: flex;
-  margin-right: 42px;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 880px) {
   .footer__navigation-links {
-    margin-right: 6px;
   }
 }
