@@ -1,0 +1,28 @@
+.header__menu-icon {
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  display: none;
+  position: relative;
+}
+
+.header__menu-icon::after {
+  content: "sss";
+  /* position: absolute; */
+  color: red`;
+  width: 16px;
+  height: 2px;
+  background-color: red;
+  display: none;
+  top: -4px;
+  left: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .header__menu-icon {
+    display: block;
+  }
+  .header__menu-icon::after {
+    
+  }
+}

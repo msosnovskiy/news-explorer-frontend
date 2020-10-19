@@ -58,3 +58,9 @@
     bottom: -18px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .header__item {
+    margin: 0 auto 24px 0;
+  }
+}
