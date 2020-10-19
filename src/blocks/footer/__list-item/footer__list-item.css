@@ -19,6 +19,7 @@
 @media screen and (max-width: 768px) {
   .footer__list-item {
     margin-right: 0px;
+    margin-left: 0;
   }
 }
 

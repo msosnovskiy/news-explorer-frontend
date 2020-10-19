@@ -40,7 +40,5 @@
 @media screen and (max-width: 880px) {
   .articles__message {
     margin: 8px;
-    /* padding: 8px 12px;
-    font-size: 8px; */
   }
 }

@@ -1,28 +1,49 @@
 .header__menu-icon {
   width: 16px;
-  height: 2px;
-  background-color: #fff;
+  height: 12px;
   display: none;
   position: relative;
 }
 
-.header__menu-icon::after {
-  content: "sss";
-  /* position: absolute; */
-  color: red`;
+.header__menu-icon::before {
+  content: "";
   width: 16px;
   height: 2px;
-  background-color: red;
-  display: none;
-  top: -4px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
   left: 0;
+  right: 10px;
+  transition: top .1s linear, transform .1s linear .1s;
 }
 
-@media screen and (max-width: 400px) {
+.header__menu-icon::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 10px;
+  transition: top .1s linear, transform .1s linear .1s;
+}
+
+@media screen and (max-width: 600px) {
   .header__menu-icon {
     display: block;
   }
-  .header__menu-icon::after {
-    
+
+  .header__menu-icon.header__menu-icon_active:before {
+    transform: rotate(45deg);
+    top: 4px;
+    transition: top .1s linear, transform .1s linear .1s;
   }
+  .header__menu-icon.header__menu-icon_active::after {
+    transform: rotate(-45deg);
+    top: 4px;
+    transition: top .1s linear, transform .1s linear .1s;
+
+  }
+  
 }

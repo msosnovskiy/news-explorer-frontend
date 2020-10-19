@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .header__item {
     margin: 0 auto 24px 0;
   }

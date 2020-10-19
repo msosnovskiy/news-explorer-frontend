@@ -1,23 +1,38 @@
+@keyframes menuburger {
+  from  {
+    top: 600px;
+  }
+  to {
+    top: -22px;
+  }
+}
+
 .header__navigation {
   display: flex;
   font-display: row;
   align-items: center;
+  /* transition: top 1s linear, transform 1s linear 1s; */
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .header__navigation {
     position: absolute;
     width: calc(100% + 32px);
     min-height: 286px;
     flex-direction: column;
     justify-content: flex-end;
-
-    top: -14px;
-
+    top: -22px;
+    transform: translate(-50%, 0);
     left: 50%;
-    transform: translate(-50%, 0%);
     background-color: #1A1B22;
     z-index: -1;
     padding: 98px 16px 8px;
+    display: none;
+
+    /* transition: top 1s linear, transform 11s linear 1s; */
+  }
+
+  .header__navigation.header__navigation_active {
+    display: flex;
   }
 }
