@@ -3,7 +3,7 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
   .footer__navigation-links {
     justify-content: flex-start;
   }

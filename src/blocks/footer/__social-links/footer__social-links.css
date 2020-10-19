@@ -3,8 +3,3 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 780px) {
-  .footer__social-links {
-    /* grid-area: 2 / 2 / 1 / 2; */
-  }
-}

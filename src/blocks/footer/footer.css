@@ -15,7 +15,13 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
+  .footer {
+    min-height: 64px;
+  }
+}
+
+@media screen and (max-width: 740px) {
   .footer {
     grid-template-columns: 1fr;
     grid-row-gap: 40px;

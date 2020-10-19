@@ -3,7 +3,8 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 0.1fr);
+  grid-template-columns: 1fr 80px;
+  width: auto;
   grid-column-gap: 40px;
   justify-content: flex-end
 }
@@ -14,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
   .footer__links {
     grid-template-columns: repeat(2, 1fr);
   }

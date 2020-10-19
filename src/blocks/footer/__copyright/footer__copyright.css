@@ -5,7 +5,7 @@
   color: #B6BCBF;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
   .footer__copyright {
     grid-area: 2 / 1 / 2 / 2;
     margin: 0 auto 16px;

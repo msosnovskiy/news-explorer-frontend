@@ -28,10 +28,10 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 780px) {
   .header {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
