@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 1000px) {
   .header {
-    padding: 19px 80px 12px;
+    padding: 19px 40px 12px;
   }
 }
 
@@ -28,10 +28,10 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
   .header {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 

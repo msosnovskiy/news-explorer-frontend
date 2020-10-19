@@ -1,17 +1,17 @@
 .footer__links {
-  margin: 0 auto;
   list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 80px;
   width: auto;
   grid-column-gap: 40px;
-  justify-content: flex-end
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media screen and (max-width: 880px) {
   .footer__links {
-    grid-column-gap: 12px;
+    grid-column-gap: 26px;
   }
 }
 
