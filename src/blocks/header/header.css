@@ -17,6 +17,22 @@
   justify-content: flex-start;
 }
 
+.header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 79px;
+  left: 0;
+  z-index: 2;
+}
 
+@media screen and (max-width: 1440px) {
+  .header::after {
+    display: none;
+  }
+}
 
 
