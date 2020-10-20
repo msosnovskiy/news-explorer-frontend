@@ -51,7 +51,7 @@
   }
   .header__item:hover::after {
     width: calc(100% - 4px);
-    bottom: -18px;
+    bottom: -23px;
   }
   .header__item:focus::after {
     width: calc(100% - 4px);
@@ -62,5 +62,8 @@
 @media screen and (max-width: 600px) {
   .header__item {
     margin: 0 auto 24px 0;
+  }
+  .header__item:hover::after {
+    bottom: -4px;
   }
 }

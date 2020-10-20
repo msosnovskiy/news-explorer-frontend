@@ -11,6 +11,7 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -25,4 +26,5 @@
     padding: 0 16px
   }
 }
+
 
