@@ -13,3 +13,11 @@
   }
 }
 
+@media screen and (max-width: 460px) {
+  .search__button {
+    width: 100%;
+    margin: 8px 0;
+    position: relative;
+  }
+}
+

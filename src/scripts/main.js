@@ -11,10 +11,10 @@ menuBurgerButton.onclick = function () {
 let scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 100 && windowsWidth <= 600 ) {
+  if (scrolled > 60 && windowsWidth <= 600 ) {
     menu.style.backgroundColor = '#1A1B22';
   }
-  if (100 > scrolled && windowsWidth <= 600 ) {
+  if (60 > scrolled && windowsWidth <= 600 ) {
     menu.style.backgroundColor = 'transparent';
   }
 }

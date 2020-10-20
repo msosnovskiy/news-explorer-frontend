@@ -11,3 +11,11 @@
     margin-bottom: 47px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .search__form  {
+    margin-bottom: 30px;
+  }
+}
+
+

@@ -24,3 +24,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media screen and (max-width: 460px) {
+  .articles__container {
+    padding: 10px 0;
+  }
+}

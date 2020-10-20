@@ -3,3 +3,9 @@
 .logo {
   height: 21px;
 }
+
+@media screen and (max-width: 460px) {
+  .logo {
+    height: 16px;
+  }
+}

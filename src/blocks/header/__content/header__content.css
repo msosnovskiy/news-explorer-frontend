@@ -32,7 +32,7 @@
 @media screen and (max-width: 880px) {
   .header__content {
     padding: 14px 40px 8px;
-    min-height: 66px;
+    height: 66px;
   }
 }
 
@@ -46,5 +46,12 @@
 @media screen and (max-width: 600px) {
   .header__content {
     position: fixed;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header__content {
+    padding-top: 12px;
+    height: 56px;
   }
 }

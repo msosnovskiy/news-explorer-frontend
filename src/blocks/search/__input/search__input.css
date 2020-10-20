@@ -20,3 +20,12 @@
     padding: 17px 192px 17px 24px;
   }
 }
+
+
+@media screen and (max-width: 460px) {
+  .search__input {
+    width: 100%;
+    padding: 17px 16px;
+    margin: 8px 0;
+  }
+}

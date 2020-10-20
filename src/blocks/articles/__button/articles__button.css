@@ -18,3 +18,9 @@
     margin: 8px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .articles__button {
+    margin: 16px;
+  }
+}

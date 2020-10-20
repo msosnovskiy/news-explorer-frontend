@@ -9,3 +9,10 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .articles__button-more {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
