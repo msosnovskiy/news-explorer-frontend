@@ -1,0 +1,13 @@
+.archive__description {
+  position: absolute;
+  left: 0;
+  top: 104px;
+  margin-bottom: 16px;
+  color: rgba(26, 27, 34, 0.5);
+}
+
+@media screen and (max-width: 768px ) {
+  .archive__description {
+    font-size: 14px;
+  }
+}

@@ -48,11 +48,11 @@
   }
   .header__item:hover::after {
     width: calc(100% - 4px);
-    bottom: -23px;
+    bottom: -16px;
   }
   .header__item:focus::after {
     width: calc(100% - 4px);
-    bottom: -18px;
+    bottom: -16px;
   }
 }
 
@@ -63,6 +63,9 @@
     color: #fff;
   }
   .header__item:hover::after {
+    bottom: -4px;
+  }
+  .header__item:focus::after {
     bottom: -4px;
   }
 }

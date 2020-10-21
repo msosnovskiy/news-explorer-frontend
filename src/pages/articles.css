@@ -8,6 +8,8 @@
 @import url(../blocks/container/container.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
+@import url(../blocks/span/span.css);
+@import url(../blocks/archive/archive.css);
 
 /* !!! */
 @import url(../blocks/articles/articles.css);

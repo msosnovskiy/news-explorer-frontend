@@ -1,5 +1,5 @@
 .about__paragraph {
-  margin: 0 auto 24px;
+  margin: 24px auto;
 }
 
 .about__paragraph:nth-last-of-type(1) {
@@ -10,5 +10,6 @@
   .about__paragraph {
     font-size: 18px;
     line-height: 24px;
+    margin: 16px auto;
   }
 } 

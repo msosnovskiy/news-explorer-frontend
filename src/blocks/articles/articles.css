@@ -12,7 +12,7 @@
 @import url(./__button-more/articles__button-more.css);
 
 .articles {
-  padding: 28px 0 40px;
+  padding: 12px 0 12px;
   position: relative;
   display: none;
 }
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 880px) {
   .articles {
-    padding: 41px 0 40px;
+    padding: 30px 0 30px;
   }
 }
 

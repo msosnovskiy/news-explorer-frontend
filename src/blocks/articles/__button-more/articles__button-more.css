@@ -1,6 +1,6 @@
 .articles__button-more {
-  margin-top: 24px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 880px) {
