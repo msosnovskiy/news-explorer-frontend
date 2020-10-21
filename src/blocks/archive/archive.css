@@ -11,3 +11,9 @@
     padding: 90px 0 16px;
   }
 }
+
+@media screen and (max-width: 600px ) {
+  .archive {
+    padding-top: 68px;
+  }
+}

@@ -2,7 +2,6 @@
 @import url(../vendor/common.css);
 @import url(../blocks/page/page.css);
 
-/* !!! */
 @import url(../blocks/background/backgroud.css);
 
 @import url(../blocks/container/container.css);
@@ -11,7 +10,6 @@
 @import url(../blocks/span/span.css);
 @import url(../blocks/archive/archive.css);
 
-/* !!! */
 @import url(../blocks/articles/articles.css);
 
 @import url(../blocks/title/title.css);
