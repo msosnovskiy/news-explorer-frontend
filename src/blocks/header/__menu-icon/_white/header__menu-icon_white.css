@@ -1,0 +1,11 @@
+.header__menu-icon_white {
+
+}
+
+.header__menu-icon_white::before {
+  background-color: #fff;
+}
+
+.header__menu-icon_white::after {
+  background-color: #fff;
+}

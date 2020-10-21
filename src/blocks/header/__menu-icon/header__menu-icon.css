@@ -1,3 +1,6 @@
+@import url(./_white/header__menu-icon_white.css);
+@import url(./_black/header__menu-icon_black.css);
+
 .header__menu-icon {
   width: 16px;
   height: 12px;
@@ -9,7 +12,6 @@
   content: "";
   width: 16px;
   height: 2px;
-  background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +23,6 @@
   content: "";
   width: 16px;
   height: 2px;
-  background-color: #fff;
   position: absolute;
   top: 8px;
   left: 0;
@@ -38,12 +39,12 @@
     transform: rotate(45deg);
     top: 4px;
     transition: top .1s linear, transform .1s linear .1s;
+    background-color: #fff;
   }
   .header__menu-icon.header__menu-icon_active::after {
     transform: rotate(-45deg);
     top: 4px;
     transition: top .1s linear, transform .1s linear .1s;
-
+    background-color: #fff;
   }
-  
 }

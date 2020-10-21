@@ -1,0 +1,9 @@
+.header__icon_black {
+  fill: #1A1B22;
+}
+
+@media screen and (max-width: 600px) {
+  .header__icon_black {
+    fill: #fff;
+  }
+}

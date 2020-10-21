@@ -1,0 +1,11 @@
+.header__item_black {
+  color: #1A1B22;
+}
+
+.header__item_black:hover::after {
+  background-color: #1A1B22;
+}
+
+.header__item_black:focus::after {
+  background-color: #1A1B22;
+}
