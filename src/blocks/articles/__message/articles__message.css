@@ -27,6 +27,7 @@
   margin: 24px;
   display: none;
   animation: message ease-in .05s;
+  z-index: 0;
 }
 
 @media screen and (max-width: 1100px) {

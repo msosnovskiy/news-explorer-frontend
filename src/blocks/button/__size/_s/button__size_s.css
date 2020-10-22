@@ -1,5 +1,5 @@
 .button__size_s {
-  min-width: 288px;
+  max-width: 288px;
   border-radius: 80px;
 }
 

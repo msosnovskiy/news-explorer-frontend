@@ -1,0 +1,12 @@
+.popup__places {
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+  padding: 4px;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__places {
+    width: calc(100% - 60px);
+  }
+}

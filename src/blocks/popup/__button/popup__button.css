@@ -1,0 +1,6 @@
+@import url(./_valid/popup__button_valid.css);
+@import url(./_invalid/popup__button_invalid.css);
+
+.popup__button {
+  margin: 12px 0;
+}

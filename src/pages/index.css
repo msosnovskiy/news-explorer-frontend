@@ -19,5 +19,9 @@
 
 @import url(../blocks/footer/footer.css);
 
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/label/label.css);
+@import url(../blocks/error/error.css);
+
 @import url(../vendor/fonts.css);
 @import url(../blocks/icons/icons.css);
