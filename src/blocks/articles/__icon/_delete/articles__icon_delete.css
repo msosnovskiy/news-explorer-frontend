@@ -1,0 +1,11 @@
+.articles__icon_delete {
+  margin-top: 2px;
+  width: 24px;
+  height: 24px;
+  fill: #B6BCBF;
+  transition-duration: .25s;
+}
+
+.articles__button:hover .articles__icon_delete{
+  fill: #1A1B22;
+}

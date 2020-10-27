@@ -13,15 +13,16 @@
   bottom: -8px;
   left: 50%;
   transform: translate(-50%);
-  display: none;
+  transition-duration: .2s;
+  opacity: 0;
 }
 
 .footer__list-item:hover::after {
-  display: block;
+  opacity: 1;
 }
 
 .footer__list-item:focus::after {
-  display: block;
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {

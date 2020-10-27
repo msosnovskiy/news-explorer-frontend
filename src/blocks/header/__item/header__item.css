@@ -18,15 +18,16 @@
   bottom: -12px;
   left: 50%;
   transform: translate(-50%);
-  display: none;
+  transition-duration: .2s;
+  opacity: 0;
 }
 
 .header__item:hover::after {
-  display: block;
+  opacity: 1;
 }
 
 .header__item:focus::after {
-  display: block;
+  opacity: 1;
 }
 
 @media screen and (max-width: 880px) {

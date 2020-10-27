@@ -5,11 +5,6 @@ const logo = document.querySelector('.logo');
 const menuBurgerButton = document.querySelector('.header__menu-icon');
 const windowsWidth = document.documentElement.clientWidth;
 
-// function menuOpened() {
-//   console.log(navigation.classList.contains(('header__navigation_active')));
-//   return navigation.classList.contains(('header__navigation_active'));
-// }
-
 function menuOpened() {
   return navigation.classList.contains(('header__navigation_active'));
 }
@@ -25,7 +20,7 @@ function scrolled() {
 
 window.onscroll = function () {
   if (!menuOpened()) {
-    if (scrolled() >= 60 && windowsWidth <= 600) {
+    if (scrolled() >= 56 && windowsWidth <= 600) {
       if (header.classList.contains('header_black')) {
         menuBurgerButton.classList.remove('header__menu-icon_black');
         menuBurgerButton.classList.add('header__menu-icon_white');
@@ -36,7 +31,7 @@ window.onscroll = function () {
       }
       menu.style.backgroundColor = '#1A1B22';
     }
-    if (60 > scrolled() && windowsWidth <= 600) {
+    if (56 > scrolled() && windowsWidth <= 600) {
       if (header.classList.contains('header_black')) {
         menuBurgerButton.classList.remove('header__menu-icon_white');
         menuBurgerButton.classList.add('header__menu-icon_black');
