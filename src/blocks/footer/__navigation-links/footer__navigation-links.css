@@ -1,24 +1,13 @@
 .footer__navigation-links {
   display: flex;
-  justify-content: flex-end;
   padding: 0;
 }
 
-@media screen and (max-width: 740px) {
-  .footer__navigation-links {
-    justify-content: flex-start;
-  }
-  .footer__navigation-links:nth-of-type(0) {
-    margin-left: 0;
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .footer__navigation-links {
     flex-direction: column;
-    align-items: flex-start;
     margin: 0;
   }
 }
+
 

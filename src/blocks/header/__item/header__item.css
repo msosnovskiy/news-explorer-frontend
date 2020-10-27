@@ -1,15 +1,6 @@
 @import url(./_black/header__item_black.css);
 @import url(./_white/header__item_white.css);
 
-@keyframes border {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .header__item {
   margin-left: 10px;
   font-weight: 500;
@@ -19,7 +10,7 @@
   position: relative;
 }
 
-.header__item:hover::after {
+.header__item::after {
   content: "";
   width: calc(100% - 24px);
   height: 3px;
@@ -27,18 +18,15 @@
   bottom: -12px;
   left: 50%;
   transform: translate(-50%);
-  animation: border .25s ease-in-out;
+  display: none;
+}
+
+.header__item:hover::after {
+  display: block;
 }
 
 .header__item:focus::after {
-  content: "";
-  width: calc(100% - 24px);
-  height: 3px;
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translate(-50%);
-  animation: border .25s ease-in-out;
+  display: block;
 }
 
 @media screen and (max-width: 880px) {
