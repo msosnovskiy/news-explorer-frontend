@@ -152,17 +152,50 @@
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="signin">
           <label class="label" for="email">Email</label>
-          <input type="text" name="email" class="popup__input popup__input_type_email" required minlength="8"
+          <input type="email" name="email" class="popup__input popup__input_type_email" required minlength="8"
             placeholder="Введите почту">
           <span class="error" data-for="email">Неправильный формат email</span>
           <label class="label" for="password">Пароль</label>
-          <input type="text" name="password" class="popup__input popup__input_type_password" required minlength="8"
+          <input type="password" name="password" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
           <button type="submit"
-            class="button button__size button__size_m popup__button popup__button_valid">Войти</button>
-          </form>
-          <p class="popup__text">или <a href="#" class="popup__link">Зарегистрироваться</a></p>
+            class="button button__size button__size_m popup__button popup__button_invalid">Войти</button>
+        </form>
+        <p class="popup__text">или <a href="#" class="popup__link">Зарегистрироваться</a></p>
+      </div>
+    </div>
+
+
+    <div class="popup popup_is-opened" id="popup-signup">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="signup">
+          <label class="label" for="email">Email</label>
+          <input type="email" name="email" class="popup__input popup__input_type_email" required minlength="8"
+            placeholder="Введите почту">
+          <span class="error" data-for="email">Неправильный формат email</span>
+          <label class="label" for="password">Пароль</label>
+          <input type="password" name="password" class="popup__input popup__input_type_password" required minlength="8"
+            placeholder="Введите пароль">
+          <span class="error" data-for="password"></span>
+          <label class="label" for="name">Имя</label>
+          <input type="text" name="name" class="popup__input popup__input_type_name" required minlength="2"
+            placeholder="Введите своё имя">
+          <span class="error" data-for="name"></span>
+          <button type="submit"
+            class="button button__size button__size_m popup__button popup__button_invalid">Зарегистрироваться</button>
+        </form>
+        <p class="popup__text">или <a href="#" class="popup__link">Войти</a></p>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-registered">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+        <a href="#" class="popup__link popup__link_large">Войти</a>
       </div>
     </div>
 

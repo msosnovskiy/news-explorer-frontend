@@ -1,12 +1,20 @@
 .popup__link {
+  margin-top: 18px;
+  width: 100%;
   font-size: 14px;
   line-height: 17px;
   color: #2F71E5;
   text-align: center;
   text-decoration: none;
+  text-align: left;
 }
 
 .popup__link:hover {
   transition-duration: 0.2s;
   border-bottom: 2px solid #2F71E5;
+}
+
+.popup__link_large {
+  font-size: 18px;
+  line-height: 22px;
 }
