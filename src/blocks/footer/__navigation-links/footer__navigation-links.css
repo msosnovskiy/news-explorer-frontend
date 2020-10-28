@@ -1,5 +1,6 @@
 .footer__navigation-links {
   display: flex;
+  align-items: flex-start;
   padding: 0;
 }
 
