@@ -15,14 +15,17 @@
   transform: translate(-50%);
   transition-duration: .2s;
   opacity: 0;
+  display: none;
 }
 
 .footer__list-item:hover::after {
   opacity: 1;
+  display: block;
 }
 
 .footer__list-item:focus::after {
   opacity: 1;
+  display: block;
 }
 
 @media screen and (max-width: 767px) {

@@ -20,14 +20,17 @@
   transform: translate(-50%);
   transition-duration: .2s;
   opacity: 0;
+  display: none;
 }
 
 .header__item:hover::after {
   opacity: 1;
+  display: block;
 }
 
 .header__item:focus::after {
   opacity: 1;
+  display: block;
 }
 
 @media screen and (max-width: 880px) {
