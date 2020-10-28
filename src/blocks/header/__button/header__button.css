@@ -16,6 +16,10 @@
   justify-content: center;
 }
 
+.header__button:hover {
+  transform: scale(1.04);
+}
+
 .header__button_visible {
   display: flex;
 }
