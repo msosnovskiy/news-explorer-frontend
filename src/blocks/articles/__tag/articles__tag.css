@@ -1,0 +1,28 @@
+.articles__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  min-width: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 24px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .articles__tag {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .articles__tag {
+    margin: 16px;
+  }
+}
