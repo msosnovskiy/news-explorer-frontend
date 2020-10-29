@@ -1,3 +1,6 @@
+import '../pages/index.css';
+import '../pages/articles.css';
+
 const header = document.querySelector('.header');
 const menu = document.querySelector('.header__content');
 const navigation = document.querySelector('.header__navigation');

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News explorer</title>
-  <link rel="stylesheet" href="./pages/index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon.ico')%>">
   <meta name="description" content="Веб-сервис по поиску новостей">
   <meta name="author" content="Максим Сосновский">
 </head>
@@ -51,7 +51,7 @@
         <h3 class="preloader__message">Идет поиск новостей...</h3>
       </div>
       <div class="preloader__not-found">
-        <img class="preloader__img" src="./images/notfound.svg" alt="грустный смайлик">
+        <img class="preloader__img" src="<%=require('./images/notfound.svg')%>" alt="грустный смайлик">
         <p class="preloader__description">Ничего не найдено</p>
         <h3 class="preloader__message">К сожалению по вашему запросу<span class="span span_breakpoint"></span>ничего не
           найдено..</h3>
@@ -70,7 +70,7 @@
                 </svg>
               </div>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
-              <img src="./images/img1.jpg" alt="иллюстрация статьи" class="articles__image">
+              <img src="<%=require('./images/img1.jpg')%>" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
               <h3 class="articles__title">Национальное достояние – парки</h3>
               <p class="articles__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
@@ -88,7 +88,7 @@
                 </svg>
               </div>
               <p class="articles__message">Войдите, чтобы сохранять статьи</p>
-              <img src="./images/img2.jpg" alt="иллюстрация статьи" class="articles__image">
+              <img src="<%=require('./images/img2.jpg')%>" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
               <h3 class="articles__title">Лесные огоньки: история одной фотографии</h3>
               <p class="articles__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
@@ -105,7 +105,7 @@
                 </svg>
               </div>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
-              <img src="./images/img3.jpg" alt="иллюстрация статьи" class="articles__image">
+              <img src="<%=require('./images/img3.jpg')%>" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
               <h3 class="articles__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
               <p class="articles__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
@@ -121,7 +121,7 @@
     </section>
 
     <section class="about container">
-      <img class="about__photo" src="./images/avatar.jpg" alt="фотография автора">
+      <img class="about__photo" src="<%=require('./images/avatar.jpg')%>" alt="фотография автора">
       <div class="about__content">
         <h2 class="title">Об авторе</h2>
         <p class="about__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
@@ -139,16 +139,15 @@
           <li class="footer__list-item"><a href="#" class="footer__link">Яндекс.Практикум</a></li>
         </ul>
         <div class="footer__social-links">
-          <a href="#" class="footer__link"><img class="footer__social-icon" src="./images/github.svg" alt="Github"></a>
-          <a href="#" class="footer__link"><img class="footer__social-icon" src="./images/facebook.svg"
-              alt="Facebook"></a>
+          <a href="#" class="footer__link"><img class="footer__social-icon" src="<%=require('./images/github.svg')%>" alt="логотип Github"></a>
+          <a href="#" class="footer__link"><img class="footer__social-icon" src="<%=require('./images/facebook.svg')%>" alt="логотип Facebook"></a>
         </div>
       </nav>
     </footer>
 
     <div class="popup" id="popup-signin">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="signin">
           <label class="label" for="signinEmail">Email</label>
@@ -168,7 +167,7 @@
 
     <div class="popup" id="popup-signup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="signup">
           <label class="label" for="signupEmail">Email</label>
@@ -192,7 +191,7 @@
 
     <div class="popup" id="popup-registered">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <a href="#" class="popup__link popup__link_large">Войти</a>
       </div>
@@ -216,7 +215,7 @@
 
   </div>
 
-  <script src="./scripts/main.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>
