@@ -13,7 +13,6 @@
   left: 0;
   top: 0;
   z-index: 2;
-  transition-duration: .4s;
 }
 
 .header__content::before {
