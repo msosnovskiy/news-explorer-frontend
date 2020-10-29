@@ -37,7 +37,7 @@
       <div class="container">
         <h1 class="search__title">Что творится в мире?</h1>
         <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-        <form action="" class="search__form" name="search">
+        <form class="search__form" name="search">
           <input type="text" name="keyword" class="search__input" required minlength="2" maxlength="90"
             placeholder="Введите тему новости">
           <button type="submit" class="button button__color button__color_blue search__button">Искать</button>
@@ -48,13 +48,13 @@
     <section class="preloader background background_grey">
       <div class="preloader__search preloader__search_visible">
         <div class="spinner"><i></i></div>
-        <p class="preloader__message">Идет поиск новостей...</p>
+        <h3 class="preloader__message">Идет поиск новостей...</h3>
       </div>
       <div class="preloader__not-found">
         <img class="preloader__img" src="./images/notfound.svg" alt="грустный смайлик">
         <p class="preloader__description">Ничего не найдено</p>
-        <p class="preloader__message">К сожалению по вашему запросу<span class="span span_breakpoint"></span>ничего не
-          найдено..</p>
+        <h3 class="preloader__message">К сожалению по вашему запросу<span class="span span_breakpoint"></span>ничего не
+          найдено..</h3>
       </div>
     </section>
 
@@ -64,11 +64,11 @@
         <div class="articles__container">
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button">
+              <div class="articles__button">
                 <svg class="articles__icon articles__icon_attach">
                   <use xlink:href="#attach"></use>
                 </svg>
-              </button>
+              </div>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img1.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -82,11 +82,11 @@
           </a>
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button">
+              <div class="articles__button">
                 <svg class="articles__icon articles__icon_attach articles__icon_attach_true">
                   <use xlink:href="#attach"></use>
                 </svg>
-              </button>
+              </div>
               <p class="articles__message">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img2.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -99,11 +99,11 @@
           </a>
           <a href="#" class="articles__link">
             <article class="articles__item">
-              <button class="articles__button">
+              <div class="articles__button">
                 <svg class="articles__icon articles__icon_attach">
                   <use xlink:href="#attach"></use>
                 </svg>
-              </button>
+              </div>
               <p class="articles__message articles__message_attach">Войдите, чтобы сохранять статьи</p>
               <img src="./images/img3.jpg" alt="иллюстрация статьи" class="articles__image">
               <p class="articles__date">2 августа, 2019</p>
@@ -151,12 +151,12 @@
         <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="signin">
-          <label class="label" for="email">Email</label>
-          <input type="email" name="email" class="popup__input popup__input_type_email" required minlength="8"
+          <label class="label" for="signinEmail">Email</label>
+          <input type="email" id="signinEmail" class="popup__input popup__input_type_email" required minlength="8"
             placeholder="Введите почту">
           <span class="error" data-for="email">Неправильный формат email</span>
-          <label class="label" for="password">Пароль</label>
-          <input type="password" name="password" class="popup__input popup__input_type_password" required minlength="8"
+          <label class="label" for="signinPassword">Пароль</label>
+          <input type="password" id="signinPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
           <button type="submit"
@@ -166,22 +166,21 @@
       </div>
     </div>
 
-
     <div class="popup" id="popup-signup">
       <div class="popup__content">
         <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="signup">
-          <label class="label" for="email">Email</label>
-          <input type="email" name="email" class="popup__input popup__input_type_email" required minlength="8"
+          <label class="label" for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" class="popup__input popup__input_type_email" required minlength="8"
             placeholder="Введите почту">
           <span class="error" data-for="email">Неправильный формат email</span>
-          <label class="label" for="password">Пароль</label>
-          <input type="password" name="password" class="popup__input popup__input_type_password" required minlength="8"
+          <label class="label" for="signupPassword">Пароль</label>
+          <input type="password" id="signupPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
-          <label class="label" for="name">Имя</label>
-          <input type="text" name="name" class="popup__input popup__input_type_name" required minlength="2"
+          <label class="label" for="signupName">Имя</label>
+          <input type="text" id="signupName" class="popup__input popup__input_type_name" required minlength="2"
             placeholder="Введите своё имя">
           <span class="error error_center" data-for="registered">Такой пользователь уже есть</span>
           <button type="submit"
