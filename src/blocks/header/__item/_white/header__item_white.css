@@ -1,0 +1,11 @@
+.header__item_white {
+  color: white;
+}
+
+.header__item_white:hover::after {
+  background-color: white;
+}
+
+.header__item_white:focus::after {
+  background-color: white;
+}

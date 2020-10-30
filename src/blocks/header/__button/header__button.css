@@ -1,0 +1,49 @@
+@import url(./_white/header__button_white.css);
+@import url(./_black/header__button_black.css);
+
+.header__button {
+  background-color: transparent;
+  min-height: 48px;
+  min-width: 48px;
+  margin-left: 20px;
+  border-radius: 100px;
+  padding: 12px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition-duration: .2s;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header__button:hover {
+  transform: scale(1.04);
+}
+
+.header__button_visible {
+  display: flex;
+}
+
+@media screen and (max-width: 880px) {
+  .header__button {
+    font-size: 16px;
+    min-height: 40px;
+    min-width: 40px;
+    margin-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__button {
+    margin: 16px;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+

@@ -1,0 +1,11 @@
+@import url(./_loguot/header__icon_logout.css);
+@import url(./_black/header__icon_black.css);
+@import url(./_white/header__icon_white.css);
+
+.header__icon {
+  width: 18px;
+  height: 16px;
+  display: flex;
+  align-self: center;
+  margin-left: 10px;
+}

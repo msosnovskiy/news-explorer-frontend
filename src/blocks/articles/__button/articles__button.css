@@ -1,0 +1,29 @@
+.articles__button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 880px) {
+  .articles__button {
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .articles__button {
+    margin: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+@keyframes shadow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.articles__link {
+  min-width: 100%;
+  text-decoration: none;
+  color: #1A1B22;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transition-duration: .2s;
+}
+
+.articles__link:hover {
+  transform: scale(1.02);
+}
+
+.articles__link:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: shadow .2s ease-in;
+  background: rgba(8, 29, 45, 0.1);
+  filter: blur(58px);
+}
+
+@media screen and (max-width: 880px) {
+  .articles__link:hover {
+    transform: none;
+  }
+}

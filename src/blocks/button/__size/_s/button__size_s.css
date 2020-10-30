@@ -1,0 +1,10 @@
+.button__size_s {
+  max-width: 288px;
+  border-radius: 80px;
+}
+
+@media screen and (max-width: 880px) {
+  .button__size_s {
+    min-width: 240px;
+  }
+}

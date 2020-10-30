@@ -1,0 +1,8 @@
+.preloader__description {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  max-width: 356px;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 18px auto 16px;
+}

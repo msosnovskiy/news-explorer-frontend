@@ -1,0 +1,6 @@
+@import url(./_attach/articles__icon_attach.css);
+@import url(./_delete/articles__icon_delete.css);
+
+.articles__icon {
+  transition-duration: 0.25s;
+}

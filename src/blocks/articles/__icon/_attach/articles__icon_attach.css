@@ -1,0 +1,21 @@
+.articles__icon_attach {
+  width: 14px;
+  height: 19px;
+  fill: none;
+  stroke: #B6BCBF;
+  stroke-width: 2px;
+}
+
+.articles__button:hover .articles__icon_attach {
+  stroke: #1A1B22;
+}
+
+.articles__icon_attach_true {
+  fill: #2F71E5;
+  stroke: #2F71E5;
+  stroke-width: 2px;
+}
+
+.articles__button:hover .articles__icon_attach_true {
+  stroke: #2F71E5;
+}

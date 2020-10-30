@@ -1,0 +1,28 @@
+
+@import url(./__title/search__title.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./__form/search__form.css);
+@import url(./__input/search__input.css);
+@import url(./__button/search__button.css);
+
+.search {
+  position: relative;
+  min-height: 576px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 880px) {
+  .search {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .search {
+    min-height: 536px;
+    height: 100%;
+  }
+}
+

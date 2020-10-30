@@ -1,0 +1,7 @@
+.header__content_black {
+
+}
+
+.header__content_black::before {
+  box-shadow: inset 0px -1px 0px #D1D2D6;
+}

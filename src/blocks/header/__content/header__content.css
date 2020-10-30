@@ -1,0 +1,59 @@
+@import url(./_black/header__content_black.css);
+@import url(./_white/header__content_white.css);
+
+.header__content {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 19px 0 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.header__content::before {
+  content: "";
+  height: 1px;
+  width: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__content {
+    padding-top: 19px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .header__content {
+    padding-top: 14px;
+    padding-bottom: 8px;
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__content {
+    position: fixed;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__content::before{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header__content {
+    padding-top: 12px;
+    height: 56px;
+  }
+}

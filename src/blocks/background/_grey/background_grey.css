@@ -1,0 +1,28 @@
+.background_grey {
+}
+
+.background_grey::before {
+  content: "";
+  width: calc(100% + 208px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -104px;
+  z-index: -1;
+  background-color: #F5F6F7;
+}
+
+@media screen and (max-width: 1000px) {
+  .background_grey::before {
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .background_grey::before {
+    width: calc(100% + 32px);
+    left: -16px;
+  }
+}
+

@@ -1,0 +1,30 @@
+.page {
+  color: #1A1B22;
+  padding: 0 104px;
+  margin: 0 auto;
+  font-family: 'Roboto', 'Arial', 'sans-serif';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    padding: 0 40px
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .page {
+    padding: 0 16px
+  }
+}
+
+

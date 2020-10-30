@@ -1,0 +1,19 @@
+@import url(./__description/archive__description.css);
+@import url(./__subtitle/archive__subtitle.css);
+
+.archive {
+  padding: 110px 0 32px;
+  position: relative;
+}
+
+@media screen and (max-width: 880px ) {
+  .archive {
+    padding: 90px 0 16px;
+  }
+}
+
+@media screen and (max-width: 600px ) {
+  .archive {
+    padding-top: 68px;
+  }
+}

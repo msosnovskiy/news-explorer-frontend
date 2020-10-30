@@ -1,0 +1,31 @@
+.background_img {
+}
+
+.background_img::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../images/backgroud.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  top: 0;
+  left: -104px;
+  width: calc(100% + 208px);
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1000px) {
+  .background_img::before {
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+}
+
+
+@media screen and (max-width: 740px) {
+  .background_img::before {
+    left: -16px;
+    width: calc(100% + 32px);
+  }
+}

@@ -1,0 +1,8 @@
+.preloader__not-found {
+  display: none;
+  text-align: center;
+}
+
+.preloader__not-found_visible {
+  display: block;
+}

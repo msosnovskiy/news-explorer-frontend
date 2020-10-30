@@ -1,0 +1,32 @@
+.articles__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  padding: 62px 0;
+}
+
+@media screen and (max-width: 880px) {
+  .articles__container {
+    padding: 16px 0;
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .articles__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .articles__container {
+    padding: 10px 0;
+  }
+}

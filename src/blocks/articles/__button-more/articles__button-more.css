@@ -1,0 +1,18 @@
+.articles__button-more {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 880px) {
+  .articles__button-more {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .articles__button-more {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
