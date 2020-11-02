@@ -1,17 +1,44 @@
 import '../pages/index.css';
 import '../pages/articles.css';
 
+import Popup from './components/Popup.js';
+
+const page = document.querySelector('.page');
+const buttonSignIn = page.querySelector('#buttonSignIn');
+const popupSignIn = page.querySelector('#popupSignIn');
+
+
+// --------------------- меню ---------------------------------
 const header = document.querySelector('.header');
 const menu = document.querySelector('.header__content');
 const navigation = document.querySelector('.header__navigation');
 const logo = document.querySelector('.logo');
 const menuBurgerButton = document.querySelector('.header__menu-icon');
 const windowsWidth = document.documentElement.clientWidth;
+// ------------------------------------------------------------
+
+
+const login = new Popup (popupSignIn, buttonSignIn, page);
+
+login.setEventListener();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------- Меню --------------------
 
 function menuOpened() {
   return navigation.classList.contains(('header__navigation_active'));
 }
-
 
 // затемнение меню при прокрутке на мобильной версии
 

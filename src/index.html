@@ -22,9 +22,9 @@
         <div class="header__menu-icon header__menu-icon_white"></div>
         <nav class="header__navigation">
           <a href="index.html" class="header__item header__item_white">Главная</a>
-          <a href="articles.html" class="header__item header__item_white">Сохранённые статьи</a>
-          <button class="header__button header__button_white">Авторизоваться</button>
-          <button class="header__button header__button_white header__button_visible">Грета
+          <a href="articles.html" class="header__item header__item_white" hidden>Сохранённые статьи</a>
+          <button class="header__button header__button_white header__button_visible" id="buttonSignIn">Авторизоваться</button>
+          <button class="header__button header__button_white" id="buttonSignOut">Грета
             <svg class="header__icon header__icon_white">
               <use xlink:href="#logout"></use>
             </svg>
@@ -145,7 +145,7 @@
       </nav>
     </footer>
 
-    <div class="popup" id="popup-signin">
+    <div class="popup" id="popupSignIn">
       <div class="popup__content">
         <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Вход</h3>
@@ -153,19 +153,19 @@
           <label class="label" for="signinEmail">Email</label>
           <input type="email" id="signinEmail" class="popup__input popup__input_type_email" required minlength="8"
             placeholder="Введите почту">
-          <span class="error" data-for="email">Неправильный формат email</span>
+          <span class="error" data-for="email"></span>
           <label class="label" for="signinPassword">Пароль</label>
           <input type="password" id="signinPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
           <button type="submit"
-            class="button button__size button__size_m popup__button popup__button_valid">Войти</button>
+            class="button button__size button__size_m popup__button popup__button_invalid">Войти</button>
         </form>
         <p class="popup__text">или <a href="#" class="popup__link">Зарегистрироваться</a></p>
       </div>
     </div>
 
-    <div class="popup" id="popup-signup">
+    <div class="popup" id="popupSignUp">
       <div class="popup__content">
         <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
@@ -173,7 +173,7 @@
           <label class="label" for="signupEmail">Email</label>
           <input type="email" id="signupEmail" class="popup__input popup__input_type_email" required minlength="8"
             placeholder="Введите почту">
-          <span class="error" data-for="email">Неправильный формат email</span>
+          <span class="error" data-for="email"></span>
           <label class="label" for="signupPassword">Пароль</label>
           <input type="password" id="signupPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
@@ -181,7 +181,7 @@
           <label class="label" for="signupName">Имя</label>
           <input type="text" id="signupName" class="popup__input popup__input_type_name" required minlength="2"
             placeholder="Введите своё имя">
-          <span class="error error_center" data-for="registered">Такой пользователь уже есть</span>
+          <span class="error error_center" data-for="registered"></span>
           <button type="submit"
             class="button button__size button__size_m popup__button popup__button_invalid">Зарегистрироваться</button>
         </form>
@@ -189,7 +189,7 @@
       </div>
     </div>
 
-    <div class="popup" id="popup-registered">
+    <div class="popup" id="popupRegistered">
       <div class="popup__content">
         <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>

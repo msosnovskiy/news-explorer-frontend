@@ -10,7 +10,7 @@
 }
 
 .popup__link:hover {
-  transition-duration: 0.2s;
+  transition-duration: .2s;
   border-bottom: 2px solid #2F71E5;
 }
 

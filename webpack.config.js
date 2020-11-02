@@ -8,12 +8,12 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
-    'index': './src/scripts/index.js',
-    'articles': './src/scripts/articles.js',
+    'index': './src/js/index.js',
+    'articles': './src/js/articles.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './scripts/[name].[chunkhash].js'
+    filename: './js/[name].[chunkhash].js'
   },
   module: {
     rules: [
