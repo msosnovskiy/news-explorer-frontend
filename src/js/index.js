@@ -2,10 +2,13 @@ import '../pages/index.css';
 import '../pages/articles.css';
 
 import Popup from './components/Popup.js';
+import SwitchPopup from './components/SwitchPopup.js';
 
 const page = document.querySelector('.page');
-const buttonSignIn = page.querySelector('#buttonSignIn');
-const popupSignIn = page.querySelector('#popupSignIn');
+const buttonSignin = page.querySelector('#buttonSignin');
+const popupSignin = page.querySelector('#popupSignin');
+const popupSignup = page.querySelector('#popupSignup');
+const popupRegistered = page.querySelector('#popupRegistered');
 
 
 // --------------------- меню ---------------------------------
@@ -18,17 +21,19 @@ const windowsWidth = document.documentElement.clientWidth;
 // ------------------------------------------------------------
 
 
-const login = new Popup (popupSignIn, buttonSignIn, page);
+const signinPopup = new Popup(popupSignin, document);
+const signupPopup = new Popup(popupSignup, document);
+const registeredPopup = new Popup(popupRegistered, document);
+// const switchPopup = new SwitchPopup([signinPopup, signupPopup, registeredPopup]);
 
-login.setEventListener();
+buttonSignin.addEventListener('click', () => {
+  signinPopup.open();
+})
 
-
-
-
-
-
-
-
+signinPopup.setEventListener();
+signupPopup.setEventListener();
+registeredPopup.setEventListener();
+// switchPopup.setEventListener();
 
 
 

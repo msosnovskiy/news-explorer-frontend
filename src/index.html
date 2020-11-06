@@ -23,8 +23,8 @@
         <nav class="header__navigation">
           <a href="index.html" class="header__item header__item_white">Главная</a>
           <a href="articles.html" class="header__item header__item_white" hidden>Сохранённые статьи</a>
-          <button class="header__button header__button_white header__button_visible" id="buttonSignIn">Авторизоваться</button>
-          <button class="header__button header__button_white" id="buttonSignOut">Грета
+          <button class="header__button header__button_white header__button_visible" id="buttonSignin">Авторизоваться</button>
+          <button class="header__button header__button_white" id="buttonSignout">Грета
             <svg class="header__icon header__icon_white">
               <use xlink:href="#logout"></use>
             </svg>
@@ -145,7 +145,7 @@
       </nav>
     </footer>
 
-    <div class="popup" id="popupSignIn">
+    <div class="popup" id="popupSignin">
       <div class="popup__content">
         <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Вход</h3>
@@ -165,7 +165,7 @@
       </div>
     </div>
 
-    <div class="popup" id="popupSignUp">
+    <div class="popup" id="popupSignup">
       <div class="popup__content">
         <img src="<%=require('./images/close.svg')%>" alt="крестик" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>

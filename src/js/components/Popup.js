@@ -1,8 +1,11 @@
 export default class Popup {
-  constructor(popupName, openButton, container) {
+  constructor(popupName, container) {
     this.popupName = popupName;
-    this.openButton = openButton;
     this.container = container;
+  }
+
+  setContent() {
+    
   }
 
   open () {
@@ -17,12 +20,9 @@ export default class Popup {
     this.closeButton = this.popupName.querySelector('.popup__close');
     this.popupLink = this.popupName.querySelector('.popup__link');
 
-    this.openButton.addEventListener('click', () => {
-      this.open();
-    })
-
     this.closeButton.addEventListener('click', () => {
       this.close();
+
     })
 
     this.container.addEventListener('click', (event) => {
@@ -36,10 +36,5 @@ export default class Popup {
         this.close();
       }
     });
-
-    // --- реализовать переключение попапов
-    this.popupLink.addEventListener('click', () => {
-      console.log(this.popupLink);
-    })
   }
 }
