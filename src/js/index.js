@@ -2,7 +2,6 @@ import '../pages/index.css';
 import '../pages/articles.css';
 
 import Popup from './components/Popup.js';
-import SwitchPopup from './components/SwitchPopup.js';
 
 const page = document.querySelector('.page');
 const buttonSignin = page.querySelector('#buttonSignin');
@@ -24,16 +23,14 @@ const windowsWidth = document.documentElement.clientWidth;
 const signinPopup = new Popup(popupSignin, document);
 const signupPopup = new Popup(popupSignup, document);
 const registeredPopup = new Popup(popupRegistered, document);
-// const switchPopup = new SwitchPopup([signinPopup, signupPopup, registeredPopup]);
 
 buttonSignin.addEventListener('click', () => {
-  signinPopup.open();
+  signinPopup.open(popupSignin);
 })
 
 signinPopup.setEventListener();
 signupPopup.setEventListener();
 registeredPopup.setEventListener();
-// switchPopup.setEventListener();
 
 
 

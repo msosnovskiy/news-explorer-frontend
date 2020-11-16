@@ -4,15 +4,11 @@ export default class Popup {
     this.container = container;
   }
 
-  setContent() {
-    
+  open(popup) {
+    popup.classList.add('popup_is-opened');
   }
 
-  open () {
-    this.popupName.classList.add('popup_is-opened');
-  }
-
-  close () {
+  close() {
     this.popupName.classList.remove('popup_is-opened');
   }
 
@@ -36,5 +32,13 @@ export default class Popup {
         this.close();
       }
     });
+
+    this.popupLink.addEventListener('click', () => {
+      this._popupId = this.popupLink.getAttribute('href');
+      this._popupByLink = this.container.querySelector(`${this._popupId}`);
+      this.close();
+      this.open(this._popupByLink);
+    })
+
   }
 }
