@@ -25,7 +25,8 @@ export default class RegisteredPopup extends Popup {
       }
     });
 
-    this.popupLink.addEventListener('click', () => {
+    this.popupLink.addEventListener('click', (event) => {
+      event.preventDefault();
       super.switchPopup();
     })
   }

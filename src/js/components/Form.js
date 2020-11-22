@@ -83,7 +83,8 @@ export default class Form {
     });
 
     // переключение попапов при клике по ссылке
-    this.popup.popupLink.addEventListener('click', () => {
+    this.popup.popupLink.addEventListener('click', (event) => {
+      event.preventDefault();
       this.popup.switchPopup();
       this._clear();
     })
