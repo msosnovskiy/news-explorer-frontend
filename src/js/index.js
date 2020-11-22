@@ -1,14 +1,15 @@
 import '../pages/index.css';
-import '../pages/articles.css';
+// import '../pages/articles.css';
 
 import Popup from './components/Popup.js';
+import Form from './components/Form.js';
+import RegisteredPopup from './components/RegisteredPopup.js';
 
 const page = document.querySelector('.page');
 const buttonSignin = page.querySelector('#buttonSignin');
 const popupSignin = page.querySelector('#popupSignin');
 const popupSignup = page.querySelector('#popupSignup');
 const popupRegistered = page.querySelector('#popupRegistered');
-
 
 // --------------------- меню ---------------------------------
 const header = document.querySelector('.header');
@@ -22,15 +23,20 @@ const windowsWidth = document.documentElement.clientWidth;
 
 const signinPopup = new Popup(popupSignin, document);
 const signupPopup = new Popup(popupSignup, document);
-const registeredPopup = new Popup(popupRegistered, document);
+const registeredPopup = new RegisteredPopup(popupRegistered, document);
+const validateSigninPopup = new Form(signinPopup);
+const validateSignupPopup = new Form(signupPopup);
 
 buttonSignin.addEventListener('click', () => {
   signinPopup.open(popupSignin);
 })
 
-signinPopup.setEventListener();
-signupPopup.setEventListener();
-registeredPopup.setEventListener();
+validateSigninPopup.setEventListeners();
+validateSignupPopup.setEventListeners();
+registeredPopup.setEventListeners();
+
+
+
 
 
 

@@ -151,14 +151,14 @@
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="signin">
           <label class="label" for="signinEmail">Email</label>
-          <input type="email" id="signinEmail" class="popup__input popup__input_type_email" required minlength="8"
+          <input type="email" name="email" id="signinEmail" class="popup__input popup__input_type_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required minlength="8"
             placeholder="Введите почту">
           <span class="error" data-for="email"></span>
           <label class="label" for="signinPassword">Пароль</label>
-          <input type="password" id="signinPassword" class="popup__input popup__input_type_password" required minlength="8"
+          <input type="password" name="password" id="signinPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
-          <button type="submit"
+          <button type="submit" disabled
             class="button button__size button__size_m popup__button popup__button_invalid">Войти</button>
         </form>
         <p class="popup__text">или <a href="#popupSignup" class="popup__link">Зарегистрироваться</a></p>
@@ -171,18 +171,19 @@
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="signup">
           <label class="label" for="signupEmail">Email</label>
-          <input type="email" id="signupEmail" class="popup__input popup__input_type_email" required minlength="8"
+          <input type="email" name="email" id="signupEmail" class="popup__input popup__input_type_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required minlength="8"
             placeholder="Введите почту">
           <span class="error" data-for="email"></span>
           <label class="label" for="signupPassword">Пароль</label>
-          <input type="password" id="signupPassword" class="popup__input popup__input_type_password" required minlength="8"
+          <input type="password" name="password" id="signupPassword" class="popup__input popup__input_type_password" required minlength="8"
             placeholder="Введите пароль">
           <span class="error" data-for="password"></span>
           <label class="label" for="signupName">Имя</label>
-          <input type="text" id="signupName" class="popup__input popup__input_type_name" required minlength="2"
+          <input type="text" name="name" id="signupName" class="popup__input popup__input_type_name" required minlength="2"
             placeholder="Введите своё имя">
+            <span class="error" data-for="name"></span>
           <span class="error error_center" data-for="registered"></span>
-          <button type="submit"
+          <button type="submit" disabled
             class="button button__size button__size_m popup__button popup__button_invalid">Зарегистрироваться</button>
         </form>
         <p class="popup__text">или <a href="#popupSignin" class="popup__link">Войти</a></p>
