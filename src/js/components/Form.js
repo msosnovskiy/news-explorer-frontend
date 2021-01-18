@@ -120,13 +120,10 @@ export default class Form {
       }
     });
 
-    // this.form.addEventListener('submit', (event) => {
-    //   event.preventDefault();
-    //   this._getInfo();
-    //   this.api.signup()
-    //   this.popup.close();
-    //   this._clear()
-    // })
+    this.form.addEventListener('submit', () => {
+      // this.popup.close();
+      // this._clear();
+    })
 
   }
 

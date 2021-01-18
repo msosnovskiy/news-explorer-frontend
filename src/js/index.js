@@ -2,7 +2,7 @@ import '../pages/index.css';
 // import '../pages/articles.css';
 
 import MainApi from './api/MainApi.js';
-import {config} from './constants/config.js';
+import { config } from './constants/config.js';
 import Popup from './components/Popup.js';
 import Form from './components/Form.js';
 import RegisteredPopup from './components/RegisteredPopup.js';
@@ -13,6 +13,7 @@ const buttonSignin = page.querySelector('#buttonSignin');
 const popupSignin = page.querySelector('#popupSignin');
 const popupSignup = page.querySelector('#popupSignup');
 const popupRegistered = page.querySelector('#popupRegistered');
+const formSignup = document.forms.signup;
 
 // --------------------- меню ---------------------------------
 const header = document.querySelector('.header');
@@ -27,11 +28,22 @@ const mainApi = new MainApi(config);
 const signinPopup = new Popup(popupSignin, document);
 const signupPopup = new Popup(popupSignup, document);
 const registeredPopup = new RegisteredPopup(popupRegistered, document);
-const validateSigninPopup = new Form(signinPopup, mainApi);
-const validateSignupPopup = new Form(signupPopup, mainApi);
+const validateSigninPopup = new Form(signinPopup);
+const validateSignupPopup = new Form(signupPopup);
 
 buttonSignin.addEventListener('click', () => {
   signinPopup.open(popupSignin);
+})
+
+formSignup.addEventListener('submit', (event) => {
+  event.preventDefault();
+  mainApi.signup(formSignup.elements.email.value, formSignup.elements.password.value, formSignup.elements.name.value)
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    })
 })
 
 validateSigninPopup.setEventListeners();

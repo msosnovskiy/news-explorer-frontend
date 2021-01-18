@@ -8,7 +8,7 @@ export default class MainApi {
     if (res.ok) {
       return res.json()
     }
-    return Promise.reject(`${res.message} - Ошибка: ${res.status}`);
+    return Promise.reject(`Ошибка: ${res.status}`);
   }
 
   //  регистрирует нового пользователя;
