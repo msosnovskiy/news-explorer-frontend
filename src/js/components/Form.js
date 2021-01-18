@@ -26,7 +26,7 @@ export default class Form {
     return input.checkValidity();
   }
 
-  isFieldValid(input) {
+  _isFieldValid(input) {
     const errorElem = this.form.querySelector(`.error[data-for="${input.name}"]`);
     const valid = this._validateInputElement(input);
     errorElem.textContent = input.validationMessage;
@@ -66,15 +66,23 @@ export default class Form {
   setServerError() {
     // добавляет форме ошибку, пришедшую с сервера;
   }
+
   _getInfo() {
     // вспомогательный метод, возвращает данные формы.
+    console.log(this.form.elements.email.value);
+    // const inputs = [...this.form.elements]
+    // inputs.forEach((input) => {
+    //   if (input.type !== 'submit' && input.type !== 'button') {
+    //     this.value = this.form.elements[input.name].value;
+    //   }
+    // });
   }
 
   setEventListeners() {
     // Валидация формы
     this.form.addEventListener('input', (event) => {
       const [...inputs] = this.form.elements;
-      this.isFieldValid(event.target);
+      this._isFieldValid(event.target);
       if (inputs.reduce((acc, el) => this._validateInputElement(el) && acc, true)) {
         this.setSubmitButtonState(this.button, true);
       } else {
@@ -111,6 +119,14 @@ export default class Form {
         this._clear()
       }
     });
+
+    // this.form.addEventListener('submit', (event) => {
+    //   event.preventDefault();
+    //   this._getInfo();
+    //   this.api.signup()
+    //   this.popup.close();
+    //   this._clear()
+    // })
 
   }
 

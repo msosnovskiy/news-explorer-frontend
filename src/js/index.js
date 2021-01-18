@@ -1,11 +1,12 @@
 import '../pages/index.css';
 // import '../pages/articles.css';
 
+import MainApi from './api/MainApi.js';
+import {config} from './constants/config.js';
 import Popup from './components/Popup.js';
 import Form from './components/Form.js';
 import RegisteredPopup from './components/RegisteredPopup.js';
-import MainApi from './api/MainApi.js';
-import {config} from './constants/config.js';
+
 
 const page = document.querySelector('.page');
 const buttonSignin = page.querySelector('#buttonSignin');
@@ -22,12 +23,12 @@ const menuBurgerButton = document.querySelector('.header__menu-icon');
 const windowsWidth = document.documentElement.clientWidth;
 // ------------------------------------------------------------
 
-const api = new MainApi(config);
+const mainApi = new MainApi(config);
 const signinPopup = new Popup(popupSignin, document);
 const signupPopup = new Popup(popupSignup, document);
 const registeredPopup = new RegisteredPopup(popupRegistered, document);
-const validateSigninPopup = new Form(signinPopup);
-const validateSignupPopup = new Form(signupPopup);
+const validateSigninPopup = new Form(signinPopup, mainApi);
+const validateSignupPopup = new Form(signupPopup, mainApi);
 
 buttonSignin.addEventListener('click', () => {
   signinPopup.open(popupSignin);
@@ -36,9 +37,6 @@ buttonSignin.addEventListener('click', () => {
 validateSigninPopup.setEventListeners();
 validateSignupPopup.setEventListeners();
 registeredPopup.setEventListeners();
-
-
-
 
 
 

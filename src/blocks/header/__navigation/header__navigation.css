@@ -21,5 +21,6 @@
 
   .header__navigation.header__navigation_active {
     display: flex;
+    justify-content: flex-start;
   }
 }
